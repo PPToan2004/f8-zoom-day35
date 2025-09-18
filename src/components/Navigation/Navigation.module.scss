@@ -1,0 +1,30 @@
+.wrapper {
+    ul {
+        display: flex;
+        margin: 20px 0;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    li {
+        padding: 0 20px;
+        background-color: #ccc;
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    li a {
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+.inactive {
+    color: #000;
+    font-weight: 600;
+}
+
+.active {
+    color: red;
+    font-weight: 600;
+}

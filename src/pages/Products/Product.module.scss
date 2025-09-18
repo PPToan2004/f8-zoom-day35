@@ -1,0 +1,105 @@
+.wrapper {
+    h1 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+
+    .grid_list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 16px;
+        margin-top: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 16px;
+        box-shadow: 0 4px 8px rgba($color: #000000, $alpha: 0.1);
+
+        h3 {
+            margin: 0 0 10px;
+            overflow: hidden;
+            display: -webkit-inline-box;
+            -webkit-line-clamp: 1;
+            line-clamp: 1;
+            -webkit-box-orient: vertical;
+            font-weight: bold;
+        }
+
+        p {
+            overflow: hidden;
+            display: -webkit-inline-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        button {
+            display: inline-block;
+            padding: 8px 12px;
+            opacity: 1;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            border-radius: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+    }
+
+    .modal_overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.06);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80%;
+            overflow-x: auto;
+        }
+
+        button {
+            background-color: red;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 6px 10px;
+            cursor: pointer;
+            float: right;
+        }
+
+        h2 {
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            unicode-bidi: isolate;
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.2;
+        }
+    }
+}

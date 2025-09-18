@@ -1,0 +1,50 @@
+.wrapper {
+
+    h1 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .comment_individual {
+        margin-bottom: 36px;
+
+        img {
+            width: 36px;
+            height: 36px;
+            background-size: cover;
+            background-position: top center;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .comment_info,
+        .comment_body {
+            display: inline-block;
+            position: relative;
+            left: 36px;
+        }
+
+        .comment_body {
+            margin-left: 12px;
+        }
+
+        .comment_name,
+        .comment_email,
+        .comment_time {
+            display: inline;
+            margin-left: 12px;
+            font-weight: bold;
+        }
+
+         .comment_time {
+            color: #808080;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+    }
+
+
+}

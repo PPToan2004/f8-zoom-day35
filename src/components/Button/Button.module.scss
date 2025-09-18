@@ -1,0 +1,61 @@
+.wrapper {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+
+
+.primary {
+    color: #fff;
+    background: #a423a4;
+}
+
+.rounded {
+    border-radius: 999px;
+}
+
+.bordered {
+    color: #a423a4;
+    border-color: currentColor;
+}
+
+// Sizes
+.small {
+    padding: 2px 12px;
+    font-size: 1.4rem;
+}
+
+.medium {
+    padding: 4px 16px;
+}
+
+.large {
+    padding: 6px 20px;
+    font-size: 1.8rem;
+}
+
+.loading {
+    position: relative;
+    pointer-events: none;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        border: 2px solid #000000;
+        border-top-color: transparent;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+
+    color: transparent;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
